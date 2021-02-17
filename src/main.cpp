@@ -22,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
-#define VERSION "1.3.3"
+#define VERSION "1.4.3"
 
 #include "Arduino.h"
 #include <ESP8266WiFi.h>
@@ -382,7 +382,7 @@ void ICACHE_RAM_ATTR loop()
 		sendTime();
 	}
 
-	if (autoRestartIntervalSeconds > 0 && uptime > autoRestartIntervalSeconds * 1000)
+	if (autoRestartIntervalSeconds > 0 && uptime > autoRestartIntervalSeconds)
 	{
 		writeEvent("INFO", "sys", "System is going to reboot", "");
 #ifdef DEBUG
