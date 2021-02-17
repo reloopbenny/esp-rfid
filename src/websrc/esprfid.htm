@@ -556,7 +556,7 @@
     <br>
     <br>
     <legend>Wi-Fi Settings</legend>
-    <h6 class="text-muted">Type your Wi-Fi Network's SSID or Scan for nerby Wireless Networks to join.</h6>
+    <h6 class="text-muted">Írja be a Wi-Fi hálózat SSID-jét, vagy a csatlakozáshoz keresse meg a közeli vezeték nélküli hálózatokat.</h6>
     <br>
     <div class="row form-group">
         <label class="col-xs-3">Wi-Fi Mode<i style="margin-left: 10px;" class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="You can run your ESP in AP Mode or Client Mode. In client mode you will need to connect to an existing Wi-Fi network, in AP Mode ESP creates a Wi-Fi network itself."></i></label>
@@ -719,7 +719,7 @@
                   <option value="-2">(GMT -2:00) Mid-Atlantic</option>
                   <option value="-1">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
                   <option selected="selected" value="0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
-                  <option value="1">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                  <option value="1">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Budapest</option>
                   <option value="2">(GMT +2:00) Kaliningrad, South Africa</option>
                   <option value="3">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
                   <option value="3.5">(GMT +3:30) Tehran</option>
@@ -754,18 +754,18 @@
     <br>
     <div class="row text-center">
         <div class="col-md-8 col-md-offset-2">
-            <h1>Welcome</h1>
-            <p>Here you can find some information about your device status.</p>
+            <h1>Üdvözöllek</h1>
+            <p>Ittvan néhány infó a modulról:</p>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <span>esp-rfid Access Control</span>&nbsp; <small><strong><span id="sver"></span></strong></small>
+                    <span>aura-rfid Access Control</span>&nbsp; <small><strong><span id="sver"></span></strong></small>
                 </div>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default table-responsive">
                 <table class="table table-hover table-striped table-condensed">
-                    <caption>Device</caption>
+                    <caption>Eszköz</caption>
                     <tr>
                         <th>Chip ID</th>
                         <td id="chip"></td>
@@ -846,11 +846,11 @@
 </div>
 <div id="userscontent">
     <div id="loading-img" class="text-center">
-        <h5>Please wait while fetching data... <span id="loadpages"></span></h5>
+        <h5>Kis türelmet adatok lekérése... <span id="loadpages"></span></h5>
     </div>
     <br>
     <div class="text-center" id="usersbanner">
-        <h5>You can add new users by either scanning a RFID Tag or by clicking on "New User" button.</h5>
+        <h5>Új felhasználókat felvehet akár RFID-címke beolvasásával, akár az "Új felhasználó" gombra kattintva.</h5>
     </div>
     <br>
     <div class="panel panel-default">
@@ -868,7 +868,7 @@
             <form class="modal-content form-horizontal" id="editor">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="editor-title">Add User</h4>
+                    <h4 class="modal-title" id="editor-title">Hozzáadás</h4>
                 </div>
                 <div id=usermodalbody class="modal-body">
                     <input type="number" id="id" name="id" class="hidden" />
@@ -924,8 +924,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Mentés</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Mégse</button>
                 </div>
             </form>
         </div>

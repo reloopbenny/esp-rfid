@@ -22,70 +22,65 @@
             </div>
             <div class="sidebar-header">
                 <br>
-                <h1><i class="glyphicon glyphicon-tags" aria-hidden="true"></i>esp-rfid</h1>
+                <h1><i class="glyphicon glyphicon-tags" aria-hidden="true"></i>AURA</h1>
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#" id="status"><i class="glyphicon glyphicon-home"></i>Status</a>
+                    <a href="#" id="status"><i class="glyphicon glyphicon-home"></i>Státusz</a>
                 </li>
                 <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i  class="glyphicon glyphicon-cog"></i>Settings</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#" id="network"><i class="glyphicon glyphicon-signal"></i>Wireless Network</a>
+                            <a href="#" id="network"><i class="glyphicon glyphicon-signal"></i>WiFi</a>
                         </li>
                         <li>
-                            <a href="#" id="hardware"><i class="glyphicon glyphicon-wrench"></i>Hardware Settings</a>
+                            <a href="#" id="hardware"><i class="glyphicon glyphicon-wrench"></i>Hardware Beállítások</a>
                         </li>
                         <li>
-                            <a href="#" id="general"><i class="glyphicon glyphicon-list-alt"></i>General Settings</a>
+                            <a href="#" id="general"><i class="glyphicon glyphicon-list-alt"></i>Fő Beállítások</a>
                         </li>
                         <li>
-                            <a href="#" id="mqtt"><i class="glyphicon glyphicon-link"></i>MQTT Settings</a>
+                            <a href="#" id="mqtt"><i class="glyphicon glyphicon-link"></i>MQTT</a>
                         </li>
                         <li>
-                            <a href="#" id="ntp"><i class="glyphicon glyphicon-hourglass"></i>NTP (Time) Settings</a>
+                            <a href="#" id="ntp"><i class="glyphicon glyphicon-hourglass"></i>Idő Beállítás</a>
                         </li>
                         <li>
-                            <a href="#" id="logsettings"><i class="glyphicon glyphicon-list-alt"></i>Logfile Settings</a>
+                            <a href="#" id="logsettings"><i class="glyphicon glyphicon-list-alt"></i>Log Beállítás</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" id="users"><i  class="glyphicon glyphicon-user"></i>Users</a>
+                    <a href="#" id="users"><i  class="glyphicon glyphicon-user"></i>Felhasználók</a>
                 </li>
                 <li>
                     <a href="#logsSubmenu" data-toggle="collapse" aria-expanded="false"><i  class="glyphicon glyphicon-folder-open"></i>Logs</a>
                     <ul class="collapse list-unstyled" id="logsSubmenu">
                         <li>
-                            <a href="#" id="latestlog"><i  class="glyphicon glyphicon-calendar"></i>Access Log</a>
+                            <a href="#" id="latestlog"><i  class="glyphicon glyphicon-calendar"></i>Használat Log</a>
                         </li>
                         <li>
-                            <a href="#" id="eventlog"><i  class="glyphicon glyphicon-transfer"></i>Event Log</a>
+                            <a href="#" id="eventlog"><i  class="glyphicon glyphicon-transfer"></i>Rendszer Log</a>
                         </li>
                         <li>
-                            <a href="#" id="logmaintenance"><i  class="glyphicon glyphicon-wrench"></i>Logfile Maintenance</a>
+                            <a href="#" id="logmaintenance"><i  class="glyphicon glyphicon-wrench"></i>Log Karbantartás</a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <li>
-                        <a href="#" id="backup"><i class="glyphicon glyphicon-floppy-disk"></i>Backup & Restore</a>
+                        <a href="#" id="backup"><i class="glyphicon glyphicon-floppy-disk"></i>Mentés & Visszaállítás</a>
                     </li>
                     <li>
-                        <a href="#" id="reset"><i class="glyphicon glyphicon-repeat"></i>Factory Reset</a>
+                        <a href="#" id="reset"><i class="glyphicon glyphicon-repeat"></i>Teljes Reset</a>
                     </li>
                     <li>
                         <a data-toggle="modal" href="#update"><i class="glyphicon glyphicon-open"></i>Update</a>
                     </li>
             </ul>
             <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://github.com/esprfid/esp-rfid" class="download">Project's GitHub Page</a>
-                </li>
-                <li>
-                    <a href="https://salt.bountysource.com/checkout/amount?team=esp-rfid" class="download" aria-hidden="true" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Nothing says better thank you than a donation."><i class="glyphicon glyphicon-euro"></i>Donate</a>
-                </li>
+              
                 <li>
                     <a href="#" class="article" onclick="logout();">Logout</a>
                 </li>
@@ -98,7 +93,7 @@
         <div id="content">
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                 <i class="glyphicon glyphicon-menu-hamburger"></i>
-                <span>Menu</span>
+                <span>Menü</span>
             </button>
             <div id="ajaxcontent">
             </div>
@@ -158,7 +153,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Please Sign In</h4>
+                            <h4 class="modal-title">Jelentkezz be.</h4>
                         </div>
                         <div class="row">
                             <br>
@@ -170,7 +165,7 @@
                                                 <div class="form-group">
                                                     <input id="password" class="form-control" placeholder="Password" name="password" type="password" value="" required="" title="Please enter your password">
                                                 </div>
-                                                <button type="submit" class="btn btn-success btn-md pull-right">Login</button>
+                                                <button type="submit" class="btn btn-success btn-md pull-right">Bejelentkezés</button>
                                             </fieldset>
                                         </form>
                                     </div>
@@ -211,7 +206,7 @@
                                 <br>
                             </div>
                             <div>
-                                <h4>Current Version:</h4>
+                                <h4>Jelenlegi verzió:</h4>
                                 <h5 id="versionhead"></h5>
                                 <div class="form-group">
                                     <input id="binform" onchange="allowUpload();" type="file" name="update" accept=".bin">
